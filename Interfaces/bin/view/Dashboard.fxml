@@ -6,16 +6,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.StackPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardController" stylesheets="@dashbord.css">
-    <!-- Left region for navigation bar -->
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardController" stylesheets="@../style/dashbord.css">
     <left>
         <VBox spacing="10" styleClass="nav-bar">
             <ListView fx:id="navListView" prefWidth="150" onMouseClicked="#handleNavItemSelection"/>
         </VBox>
     </left>
-    <!-- Center region for main content -->
     <center>
-        <StackPane fx:id="mainContentPane"> <!-- Add the fx:id for StackPane -->
+        <StackPane fx:id="mainContentPane">
             <Label fx:id="mainLabel" styleClass="main-label" />
         </StackPane>
     </center>

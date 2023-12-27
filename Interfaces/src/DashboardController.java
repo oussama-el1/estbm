@@ -1,3 +1,5 @@
+
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
@@ -51,7 +53,7 @@ public class DashboardController {
         // Load EnseignantsForm.fxml dynamically
         try {
             mainContentPane.getChildren().clear(); // Clear existing content
-            mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("EnseignantsForm.fxml.")));
+            mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("view/EnseignantsForm.fxml.")));
         } catch (IOException e) {
             e.printStackTrace();
             mainContentPane.getChildren().setAll(new Label("Error loading Enseignants Form"));

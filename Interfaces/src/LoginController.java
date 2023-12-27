@@ -1,3 +1,4 @@
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -80,7 +81,7 @@ public class LoginController {
 
     private void openDashboardWindow(String userEmail) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("view/Dashboard.fxml"));
             Parent root = loader.load();
 
             // Pass the user's email to the dashboard controller
@@ -95,7 +96,7 @@ public class LoginController {
             Stage dashboardStage = new Stage();
             dashboardStage.setTitle("Dashboard");
             Scene scene = new Scene(root, 700, 500);
-            dashboardStage.getIcons().add(new javafx.scene.image.Image("resources\\estbm.png"));
+            dashboardStage.getIcons().add(new javafx.scene.image.Image("resources/estbm.png"));
             dashboardStage.setScene(scene);
             dashboardStage.show();
         } catch (IOException e) {

@@ -1,7 +1,7 @@
 /* styles.css */
 .root {
     -fx-background-size: cover;
-    -fx-background-image: url('resources/bgimage.jpg');
+    -fx-background-image: url('../resources/bgimage.jpg');
 }
 
 VBox {
