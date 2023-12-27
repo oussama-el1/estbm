@@ -85,7 +85,7 @@ public class LoginController {
 
             // Pass the user's email to the dashboard controller
             DashboardController dashboardController = loader.getController();
-            dashboardController.initialize(userEmail);
+            dashboardController.initialize();
 
             if (root == null) {
                 System.out.println("FXML file not loaded. Check if Dashboard.fxml is in the correct location.");
@@ -94,7 +94,8 @@ public class LoginController {
 
             Stage dashboardStage = new Stage();
             dashboardStage.setTitle("Dashboard");
-            Scene scene = new Scene(root);
+            Scene scene = new Scene(root, 700, 500);
+            dashboardStage.getIcons().add(new javafx.scene.image.Image("resources\\estbm.png"));
             dashboardStage.setScene(scene);
             dashboardStage.show();
         } catch (IOException e) {
