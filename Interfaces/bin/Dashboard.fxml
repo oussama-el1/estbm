@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="DashboardController">
+
+    <!-- Top region for the welcome message -->
+    <top>
+        <VBox alignment="CENTER">
+            <Label fx:id="welcomeLabel" styleClass="welcome-label"/>
+        </VBox>
+    </top>
+    <!-- Center region for additional dashboard content -->
+    <center>
+        <!-- Add your additional UI elements here -->
+    </center>
+</BorderPane>
