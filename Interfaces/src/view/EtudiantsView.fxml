@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EtudiantsController" spacing="10" alignment="CENTER">
+    <TableView fx:id="etudiantsTable">
+        <columns>
+            <TableColumn text="CIN" fx:id="cinColumn" />
+            <TableColumn text="Nom" fx:id="nomColumn" />
+            <TableColumn text="Prenom" fx:id="prenomColumn" />
+            <TableColumn text="Email" fx:id="emailColumn" />
+            <TableColumn text="Telephone" fx:id="telephoneColumn" />
+            <TableColumn text="Note Bac" fx:id="notebacColumn" />
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" fx:controller="CoursEnseignantController" alignment="CENTER" stylesheets="@../style/add.css">
+    <Label text="Update cours" />
+    <TextField fx:id="idCours" promptText="Cours id" />
+    <TextField fx:id="idEnseignantField" promptText="id Enseignant" />
+    <TextField fx:id="nomCoursField" promptText="Nom Cours" />
+    <Button styleClass="greenbtn" text="Submit" onAction="#handleupSubmit" />
+</VBox>

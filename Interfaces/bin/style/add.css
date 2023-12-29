@@ -1,43 +1,96 @@
 /* styles.css */
+/* datepicker-style.css */
 
 /* Top Navigation Bar */
 HBox {
-    -fx-background-color: #3498db; /* Set background color */
-    -fx-padding: 10; /* Add padding */
-    -fx-alignment: center; /* Center align items */
-    -fx-font-family: "Arial"; /* Set font family */
-    -fx-font-size: 18px; /* Set font size */
-    -fx-text-fill: #ffffff; /* Set text color */
+    -fx-background-color: #3498db;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-font-family: "Arial";
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
 }
 
 /* AddForm */
 VBox {
-    -fx-spacing: 20; /* Set spacing between children */
+    -fx-spacing: 10;
 }
 
 Label {
-    -fx-font-family: "Arial"; /* Set font family for labels */
-    -fx-font-size: 25px; /* Set font size for labels */
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
 }
 
 TextField {
-    -fx-font-family: "Arial"; /* Set font family for text fields */
-    -fx-font-size: 14px; /* Set font size for text fields */
-    -fx-max-width: 250px; /* Set preferred width for text fields */
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-max-width: 250px;
 }
 
-Button {
-    -fx-font-family: "Arial"; /* Set font family for buttons */
-    -fx-font-size: 14px; /* Set font size for buttons */
-    -fx-background-color: #3498db; /* Set default background color for buttons */
-    -fx-text-fill: #ffffff; /* Set default text color for buttons */
-    -fx-padding: 8 15; /* Add padding for buttons */
-    -fx-border-radius: 5; /* Set border radius for buttons */
-    -fx-cursor: hand; /* Set cursor on hover */
-    -fx-transition: all 0.3s; /* Add transition effect */
+.button {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
 }
 
 /* Hover effect for buttons */
-Button:hover {
-    -fx-background-color: #2980b9; /* Change background color on hover */
+.button:hover {
+    -fx-background-color: #155192;
+}
+
+.greenbtn {
+    -fx-background-color: #0db556;
+}
+
+.greenbtn:hover {
+    -fx-background-color: #256f0a;
+}
+
+.redbtn {
+    -fx-background-color: #d43131;
+}
+
+.redbtn:hover {
+    -fx-background-color: #a21309;
+}
+
+/* Styling for DatePicker */
+.date-picker .arrow-button {
+    -fx-background-color: rgb(238, 238, 238);
+}
+
+.date-picker .button {
+    -fx-background-color: rgb(238, 238, 238);
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: rgb(238, 238, 238);
+}
+
+.date-picker {
+    -fx-max-width: 250px;
+}
+
+.date-picker .date-cell {
+    -fx-max-width: 150px;
+    -fx-max-height: 50px;
+}
+
+.date-picker .popup-content {
+    -fx-pref-width: 250px;
+}
+
+.date-picker .month-year-pane {
+    -fx-max-height: 30px; /* Set the max height for the month-year pane */
+    -fx-background-color : rgb(238, 238, 238);
+}
+
+.date-picker .picker-control {
+    -fx-width: 150px;
+    -fx-height: 150px; /* Set the max height for the picker control */
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EmploiDuTempsController" spacing="10" alignment="CENTER">
+    <TextField fx:id="filiereNameTextField" promptText="Enter Filiere Name"/>
+    <Button text="Show Emploi Du Temps" onAction="#showEmploiDuTemps"/>
+    <TableView fx:id="emploiDuTempsTable">
+        <columns>
+            <TableColumn text="Jour" fx:id="jourColumn" />
+            <TableColumn text="Heure Début" fx:id="heureDebutColumn" />
+            <TableColumn text="Heure Fin" fx:id="heureFinColumn" />
+            <TableColumn text="Nom Cours" fx:id="nomCoursColumn" />
+            <TableColumn text="Nom Enseignant" fx:id="nomEnseignantColumn" />
+            <TableColumn text="Salle" fx:id="salleColumn" />
+        </columns>
+    </TableView>
+</VBox>

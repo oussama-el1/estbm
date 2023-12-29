@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" fx:controller="ExamensController" alignment="CENTER" stylesheets="@../style/add.css">
+    <Label text="Remove Examens" />
+    <TextField fx:id="entryIdField" promptText="Entry ID" />
+    <Button styleClass="redbtn" text="Submit" onAction="#handleRemoveSubmit" />
+</VBox>

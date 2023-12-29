@@ -37,10 +37,8 @@ public class LoginController {
         if (authenticateUser(email, password)) {
             // Successful login
             System.out.println("Login successful");
-
             // Close the login window
             closeLoginWindow();
-
             // Open the dashboard window
             openDashboardWindow(email);
         } else {
@@ -95,7 +93,7 @@ public class LoginController {
 
             Stage dashboardStage = new Stage();
             dashboardStage.setTitle("Dashboard");
-            Scene scene = new Scene(root, 700, 500);
+            Scene scene = new Scene(root, 800, 600);
             dashboardStage.getIcons().add(new javafx.scene.image.Image("resources/estbm.png"));
             dashboardStage.setScene(scene);
             dashboardStage.show();

@@ -17,7 +17,7 @@
 
 /* Style for the Buttons in the top bar */
 .top-bar .button {
-    -fx-background-color: #2980b9; /* Set background color to a darker blue */
+    -fx-background-color: #3498db; /* Set background color to a darker blue */
     -fx-text-fill: #ffffff; /* Set text color to white */
     -fx-font-size: 14px;
     -fx-border-radius: 8px; /* Set border radius for a rounded appearance */
@@ -31,4 +31,7 @@
     -fx-padding: 10px; /* Add padding */
     -fx-alignment: CENTER_RIGHT; /* Align the children to the right */
     -fx-border-radius: 20px;
+}
+.top-bar .button:hover {
+    -fx-background-color: #175c8a; /* Change background color on hover */
 }

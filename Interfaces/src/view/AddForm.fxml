@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" fx:controller="AddFormController" alignment="CENTER" stylesheets="@../style/add.css">
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" fx:controller="EnseignantsFormController" alignment="CENTER" stylesheets="@../style/add.css">
     <Label text="Add Enseignant" />
     <TextField fx:id="prenomField" promptText="Prenom" />
     <TextField fx:id="nomField" promptText="Nom" />
     <TextField fx:id="telField" promptText="Tel" />
     <TextField fx:id="emailField" promptText="Email" />
-    <Button text="Submit" onAction="#handleSubmit" />
+    <Button styleClass="button" text="Submit" onAction="#handleaddSubmit" />
 </VBox>
