@@ -1,24 +1,32 @@
-.root {
-    -fx-font-size: 14;
-}
-
-#nav-bar {
-    -fx-background-color: #AEB9C5;
+.nav-bar {
+    -fx-background-color: #111111;
     -fx-padding: 10;
-    -fx-border-radius: 10;
 }
 
-.nav-bar .list-view {
+.list-view {
     -fx-background-color: transparent;
+    -fx-vgrow: ALWAYS;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10;
+    -fx-background-color: #333333;
+    -fx-border-radius: 5;
     -fx-text-fill: white;
-    -fx-font-weight: bold;
 }
 
-.nav-bar .list-view .list-cell {
-    -fx-padding: 5;
+.list-view .list-cell:hover {
+    -fx-background-color: #999999;
 }
 
-.main-label {
-    -fx-font-size: 18;
-    -fx-padding: 20;
+.nav-bar > * {
+    -fx-vgrow: ALWAYS;
+}
+
+.list-view .scroll-bar {
+    -fx-background: #333333;
+}
+
+.list-view .scroll-bar .thumb {
+    -fx-background: #333333;
 }

@@ -2,14 +2,6 @@
 /* datepicker-style.css */
 
 /* Top Navigation Bar */
-HBox {
-    -fx-background-color: #3498db;
-    -fx-padding: 10;
-    -fx-alignment: center;
-    -fx-font-family: "Arial";
-    -fx-font-size: 18px;
-    -fx-text-fill: #ffffff;
-}
 
 /* AddForm */
 VBox {
@@ -17,20 +9,25 @@ VBox {
 }
 
 Label {
-    -fx-font-family: "Arial";
-    -fx-font-size: 15px;
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Choose a sans-serif font */
+    -fx-font-size: 18px; /* Increase the font size */
+    -fx-text-fill: #333333; /* Dark Gray text color */
 }
 
 TextField {
     -fx-font-family: "Arial";
     -fx-font-size: 14px;
     -fx-max-width: 250px;
+    -fx-background-color: #f2f2f2; /* Light Gray */
+    -fx-border-radius: 5;
+    -fx-padding: 8;
+    -fx-border-color: #e0e0e0; /* Lighter Gray Border */
 }
 
 .button {
     -fx-font-family: "Arial";
     -fx-font-size: 14px;
-    -fx-background-color: #3498db;
+    -fx-background-color: #4d4d4d; /* Medium Gray */
     -fx-text-fill: #ffffff;
     -fx-padding: 8 15;
     -fx-border-radius: 5;
@@ -40,36 +37,36 @@ TextField {
 
 /* Hover effect for buttons */
 .button:hover {
-    -fx-background-color: #155192;
+    -fx-background-color: #666666; /* Darker Gray on Hover */
 }
 
 .greenbtn {
-    -fx-background-color: #0db556;
+    -fx-background-color: #0db556; /* Modified Green */
 }
 
 .greenbtn:hover {
-    -fx-background-color: #256f0a;
+    -fx-background-color: #256f0a; /* Darker Green on Hover */
 }
 
 .redbtn {
-    -fx-background-color: #d43131;
+    -fx-background-color: #d43131; /* Modified Red */
 }
 
 .redbtn:hover {
-    -fx-background-color: #a21309;
+    -fx-background-color: #a21309; /* Darker Red on Hover */
 }
 
 /* Styling for DatePicker */
 .date-picker .arrow-button {
-    -fx-background-color: rgb(238, 238, 238);
+    -fx-background-color: #f2f2f2; /* Light Gray */
 }
 
 .date-picker .button {
-    -fx-background-color: rgb(238, 238, 238);
+    -fx-background-color: #f2f2f2; /* Light Gray */
 }
 
 .date-picker .arrow-button {
-    -fx-background-color: rgb(238, 238, 238);
+    -fx-background-color: #f2f2f2; /* Light Gray */
 }
 
 .date-picker {
@@ -87,7 +84,7 @@ TextField {
 
 .date-picker .month-year-pane {
     -fx-max-height: 30px; /* Set the max height for the month-year pane */
-    -fx-background-color : rgb(238, 238, 238);
+    -fx-background-color: #f2f2f2; /* Light Gray */
 }
 
 .date-picker .picker-control {

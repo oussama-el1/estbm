@@ -34,6 +34,9 @@ public class EtudiantsFormController {
     private TextField BacNote;
 
     @FXML
+    private TextField nomFil;
+
+    @FXML
     private Button submitButton;
     @FXML
     private Label titleLabel; 
@@ -73,6 +76,7 @@ public class EtudiantsFormController {
         String prenom = prenomField.getText();
         String tel = telField.getText();
         String email = emailField.getText();
+        String nf = nomFil.getText();
     
         // Parse notebac as a double
         double notebac;
@@ -85,7 +89,7 @@ public class EtudiantsFormController {
         }
     
         // Check if any of the fields is empty
-        if (nom.isEmpty() || prenom.isEmpty() || tel.isEmpty() || email.isEmpty() || cin.isEmpty()) {
+        if (nom.isEmpty() || prenom.isEmpty() || tel.isEmpty() || email.isEmpty() || cin.isEmpty() || nf.isEmpty()) {
             // Show an alert or message to inform the user that all fields must be filled
             System.out.println("All fields must be filled.");
             return; // Don't proceed with the database insertion
@@ -96,7 +100,7 @@ public class EtudiantsFormController {
             Connection connection = DatabaseConnection.connect();
             if (connection != null) {
                 // SQL query to insert data into Etudiants table
-                String insertQuery = "INSERT INTO Etudiants (cin, nom, prenom, email, telephone, notebac) VALUES (?, ?, ?, ?, ?, ?)";
+                String insertQuery = "INSERT INTO Etudiants (cin, nom, prenom, email, telephone, notebac, nomFiliere) VALUES (?, ?, ?, ?, ?, ?, ?)";
                 // Create a prepared statement
                 try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
                     // Set parameters for the query
@@ -105,7 +109,8 @@ public class EtudiantsFormController {
                     preparedStatement.setString(3, prenom);
                     preparedStatement.setString(4, email);
                     preparedStatement.setString(5, tel);
-                    preparedStatement.setDouble(6, notebac); // Set notebac as a double
+                    preparedStatement.setDouble(6, notebac);
+                    preparedStatement.setString(7, nf);
                     // Execute the query
                     preparedStatement.executeUpdate();
                     System.out.println("Row inserted!");
@@ -147,6 +152,7 @@ public class EtudiantsFormController {
         String tel = telField.getText();
         String email = emailField.getText();
         double notebac;
+        String nf = nomFil.getText();
 
         try {
             notebac = Double.parseDouble(BacNote.getText());
@@ -157,7 +163,7 @@ public class EtudiantsFormController {
         }
 
         // Check if any of the fields is empty
-        if (cin.isEmpty() || nom.isEmpty() || prenom.isEmpty() || tel.isEmpty() || email.isEmpty()) {
+        if (cin.isEmpty() || nom.isEmpty() || prenom.isEmpty() || tel.isEmpty() || email.isEmpty() || nf.isEmpty()) {
             // Show an alert or message to inform the user that all fields must be filled
             System.out.println("All fields must be filled.");
             return; // Don't proceed with the database update
@@ -169,7 +175,7 @@ public class EtudiantsFormController {
 
             if (connection != null) {
                 // SQL query to update data in the Etudiants table
-                String updateQuery = "UPDATE Etudiants SET nom=?, prenom=?, email=?, telephone=?, notebac=? WHERE cin =?";
+                String updateQuery = "UPDATE Etudiants SET nom=?, prenom=?, email=?, telephone=?, notebac=?, nomFiliere=? WHERE cin =?";
 
                 // Create a prepared statement
                 try (PreparedStatement preparedStatement = connection.prepareStatement(updateQuery)) {
@@ -179,7 +185,8 @@ public class EtudiantsFormController {
                     preparedStatement.setString(3, email);
                     preparedStatement.setString(4, tel);
                     preparedStatement.setDouble(5, notebac);
-                    preparedStatement.setString(6, cin);
+                    preparedStatement.setString(6, nf);
+                    preparedStatement.setString(7, cin);
 
                     // Execute the query
                     preparedStatement.executeUpdate();

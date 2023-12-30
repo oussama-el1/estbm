@@ -5,10 +5,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 
-<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EmploiDuTempsController" spacing="10" alignment="CENTER">
-    <TextField fx:id="filiereNameTextField" promptText="Enter Filiere Name"/>
-    <Button text="Show Emploi Du Temps" onAction="#showEmploiDuTemps"/>
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EmploiDuTempsController" spacing="10"  alignment="TOP_CENTER" stylesheets="@../style/listStyles.css">
+    <HBox spacing="10">
+        <TextField fx:id="filiereNameTextField" promptText="Enter Filiere Name" />
+        <Button text="Show Emploi Du Temps" onAction="#showEmploiDuTemps" />
+    </HBox>
     <TableView fx:id="emploiDuTempsTable">
         <columns>
             <TableColumn text="Jour" fx:id="jourColumn" />

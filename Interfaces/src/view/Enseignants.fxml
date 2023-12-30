@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EnseignantsController" spacing="10" alignment="CENTER">
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="EnseignantsController" spacing="10" alignment="TOP_CENTER" stylesheets="@../style/listStyles.css">
     <TableView fx:id="enseignantsTable">
         <columns>
             <TableColumn text="ID" fx:id="idColumn" />

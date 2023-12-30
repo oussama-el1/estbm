@@ -1,0 +1,65 @@
+/* listStyles.css */
+
+/* Apply styles to the VBox (main container) */
+#mainContentPane {
+    -fx-background-color: #f4f4f4; /* Set background color */
+    -fx-padding: 20; /* Add padding */
+}
+
+/* Apply styles to the Label */
+.title-label {
+    -fx-font-size: 18px; /* Set font size */
+    -fx-font-weight: bold; /* Set font weight */
+    -fx-alignment: CENTER; /* Center the label */
+    -fx-padding: 10 0; /* Add top and bottom padding */
+}
+
+/* Apply styles to the HBox containing TextField and Button */
+HBox {
+    -fx-spacing: 10; /* Set spacing between children */
+    -fx-alignment: CENTER; /* Center the HBox */
+}
+
+/* Apply styles to the TextField */
+TextField {
+    -fx-font-size: 14px; /* Set font size */
+    -fx-max-width: 150px; /* Set max width */
+    -fx-background-color: #eeeeee; /* Set background color */
+    -fx-border-color: #bdbdbd; /* Set border color */
+    -fx-border-width: 1; /* Set border width */
+    -fx-border-radius: 5; /* Set border radius for a rounded appearance */
+    -fx-padding: 5px; /* Add padding */
+}
+
+/* Apply styles to the Button */
+.button {
+    -fx-font-size: 14px; /* Set font size */
+    -fx-background-color: #302c26; /* Set button background color */
+    -fx-text-fill: #ffffff; /* Set button text color */
+    -fx-border-radius: 5; /* Set border radius for a rounded appearance */
+    -fx-padding: 5px 10px; /* Add padding */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #484137; /* Change background color on hover */
+}
+
+/* Apply styles to the TableView */
+#notesTable {
+    -fx-max-width: 600px; /* Set max width for the table */
+}
+
+/* Apply styles to the TableColumn headers */
+.table-column {
+    -fx-font-weight: bold; /* Set font weight for headers */
+}
+
+/* Style the scroll bar in the TableView */
+.table-view .scroll-bar {
+    -fx-background: #333333; /* Set background color for the track */
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background: #333333; /* Set background color for the thumb */
+}

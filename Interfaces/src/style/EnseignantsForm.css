@@ -2,36 +2,30 @@
 
 /* Style for the Label */
 .label-title {
-    -fx-font-size: 18px;
+    -fx-font-size: 24px; /* Increase font size */
     -fx-font-weight: bold;
-    -fx-text-fill: #333333; /* Set text color */
+    -fx-text-fill: #666666; /* Dark Gray text color */
     -fx-padding: 10px; /* Add padding */
 }
 
 /* Style for the top bar HBox */
 .top-bar {
-    -fx-background-color: #ffffff; /* Set background color to blue */
-    -fx-spacing: 10px; /* Set spacing between children */
-    -fx-padding: 10px; /* Add padding */
-}
-
-/* Style for the Buttons in the top bar */
-.top-bar .button {
-    -fx-background-color: #3498db; /* Set background color to a darker blue */
-    -fx-text-fill: #ffffff; /* Set text color to white */
-    -fx-font-size: 14px;
-    -fx-border-radius: 8px; /* Set border radius for a rounded appearance */
-    -fx-padding: 5px 10px; /* Add padding */
-}
-
-/* Adjust the margin between the Label and the top bar */
-.top-bar {
-    -fx-background-color: #ffffff; /* Set background color to blue */
+    -fx-background-color: #f2f2f2; /* Light Gray background color */
     -fx-spacing: 10px; /* Set spacing between children */
     -fx-padding: 10px; /* Add padding */
     -fx-alignment: CENTER_RIGHT; /* Align the children to the right */
     -fx-border-radius: 20px;
 }
+
+/* Style for the Buttons in the top bar */
+.top-bar .button {
+    -fx-background-color: #4d4d4d; /* Medium Gray background color */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-size: 14px;
+    -fx-border-radius: 8px; /* Set border radius for a rounded appearance */
+    -fx-padding: 8px 16px; /* Adjust padding */
+}
+
 .top-bar .button:hover {
-    -fx-background-color: #175c8a; /* Change background color on hover */
+    -fx-background-color: #666666; /* Darker Gray on hover */
 }

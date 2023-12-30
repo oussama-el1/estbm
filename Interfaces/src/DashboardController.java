@@ -24,7 +24,7 @@ public class DashboardController {
         if (!isInitialized) {
             // Initialize the navigation bar
             navListView.getItems().addAll("Enseignant", "Emplois de Temps", "Etudiants", "Filiere", "Cours", "Examens", "Notes", "List Etudients", "List Enseignant",
-                                            "List Filiere", "Emplois List");
+                                            "List Filiere", "Emplois List", "Cours List", "List Examens", "Releve notes");
             navListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
             // Set default content
             // Mark as initialized
@@ -71,6 +71,15 @@ public class DashboardController {
                     break;
                 case "Emplois List":
                     showEmploiList();
+                    break;
+                case "Cours List":
+                    showcourslis();
+                    break;
+                case "List Examens":
+                    showlistexams();
+                    break;
+                case "Releve notes":
+                    RN();
                     break;
                 default:
                     System.out.println("Not implemented yet");
@@ -185,6 +194,36 @@ public class DashboardController {
         try {
             mainContentPane.getChildren().clear(); // Clear existing content
             mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("view/EmploiDuTemps.fxml")));
+        } catch (IOException e) {
+            mainContentPane.getChildren().setAll(new Label("Error loading cours Form"));
+        }
+    }
+
+    private void showcourslis() {
+        // Load EnseignantsForm.fxml dynamically
+        try {
+            mainContentPane.getChildren().clear(); // Clear existing content
+            mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("view/CourslistEnseignant.fxml")));
+        } catch (IOException e) {
+            mainContentPane.getChildren().setAll(new Label("Error loading cours Form"));
+        }
+    }
+
+    private void showlistexams() {
+        // Load EnseignantsForm.fxml dynamically
+        try {
+            mainContentPane.getChildren().clear(); // Clear existing content
+            mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("view/Examenslist.fxml")));
+        } catch (IOException e) {
+            mainContentPane.getChildren().setAll(new Label("Error loading cours Form"));
+        }
+    }
+
+    private void RN() {
+        // Load EnseignantsForm.fxml dynamically
+        try {
+            mainContentPane.getChildren().clear(); // Clear existing content
+            mainContentPane.getChildren().add(FXMLLoader.load(getClass().getResource("view/Notes.fxml")));
         } catch (IOException e) {
             mainContentPane.getChildren().setAll(new Label("Error loading cours Form"));
         }

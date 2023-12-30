@@ -9,7 +9,7 @@
 <BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardController" stylesheets="@../style/dashbord.css">
     <left>
         <VBox spacing="10" styleClass="nav-bar">
-            <ListView fx:id="navListView" prefWidth="150" onMouseClicked="#handleNavItemSelection"/>
+            <ListView  fx:id="navListView" prefWidth="200" onMouseClicked="#handleNavItemSelection"/>
         </VBox>
     </left>
     <center>

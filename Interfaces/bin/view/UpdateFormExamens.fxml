@@ -8,7 +8,7 @@
 
 <VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="10" fx:controller="ExamensController" alignment="CENTER" stylesheets="@../style/add.css">
     <Label text="Update Examens" />
-    <TextField fx:id="entryIdField" promptText="Entry ID" />
+    <TextField fx:id="entryIdField" promptText="Examen ID" />
     <DatePicker fx:id="dateExamenPicker" promptText="Date Examen" />
     <TextField fx:id="idCoursField" promptText="ID Cours" />
     <TextField fx:id="nomFiliereField" promptText="Nom Filiere" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:id="mainContentPane" fx:controller="NoteslistController" spacing="10" alignment="TOP_CENTER" stylesheets="@../style/listStyles.css">
+    <Label text="RELEVE NOTE" fx:id="titleLabel" styleClass="title-label" />
+    <HBox spacing="10">
+        <TextField fx:id="etudiantIdTextField" promptText="Enter Etudiant ID" />
+        <Button text="Show Notes" onAction="#showNotesForEtudiant" />
+    </HBox>
+    <TableView fx:id="notesTable">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn" />
+            <TableColumn text="Etudiant ID" fx:id="etudiantIdColumn" />
+            <TableColumn text="Examen ID" fx:id="examenIdColumn" />
+            <TableColumn text="Note" fx:id="noteColumn" />
+        </columns>
+    </TableView>
+    <Button text="Print and Download" onAction="#printAndDownloadTable" />
+</VBox>

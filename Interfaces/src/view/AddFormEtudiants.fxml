@@ -12,6 +12,7 @@
     <TextField fx:id="prenomField" promptText="Prenom" />
     <TextField fx:id="nomField" promptText="Nom" />
     <TextField fx:id="telField" promptText="Tel" />
+    <TextField fx:id="nomFil" promptText="Filiere" />
     <TextField fx:id="emailField" promptText="Email" />
     <TextField fx:id="BacNote" promptText="Bac Note" />
     <Button styleClass="button" text="Submit" onAction="#handleaddSubmit" />

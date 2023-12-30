@@ -28,6 +28,9 @@ public class EtudiantsController {
     private TableColumn<Etudiant, String> telephoneColumn;
 
     @FXML
+    private TableColumn<Etudiant, String> Filname;
+
+    @FXML
     private TableColumn<Etudiant, Double> notebacColumn;
 
     public void initialize() {
@@ -38,12 +41,13 @@ public class EtudiantsController {
         emailColumn.setCellValueFactory(cellData -> cellData.getValue().getEmailProperty());
         telephoneColumn.setCellValueFactory(cellData -> cellData.getValue().getTelephoneProperty());
         notebacColumn.setCellValueFactory(cellData -> cellData.getValue().getNotebacProperty().asObject());
+        Filname.setCellValueFactory(cellData -> cellData.getValue().getfilnameProperty());
         fetchDataFromDatabase();
     }
 
         private void fetchDataFromDatabase() {
                 try {
-                    // Get a database connection
+                    
                     Connection connection = DatabaseConnection.connect();
 
                     // Check if the connection is successful
@@ -55,7 +59,6 @@ public class EtudiantsController {
                             // Execute the query and get the result set
                             ResultSet resultSet = preparedStatement.executeQuery();
 
-                            // Populate the etudiantsTable with data from the result set
                             while (resultSet.next()) {
                                 String cin = resultSet.getString("cin");
                                 String nom = resultSet.getString("nom");
@@ -63,18 +66,17 @@ public class EtudiantsController {
                                 String email = resultSet.getString("email");
                                 String telephone = resultSet.getString("telephone");
                                 double notebac = resultSet.getDouble("notebac");
+                                String filname = resultSet.getString("nomFiliere");
 
-                                Etudiant etudiant = new Etudiant(cin, nom, prenom, email, telephone, notebac);
+                                Etudiant etudiant = new Etudiant(cin, nom, prenom, email, telephone, notebac, filname);
                                 etudiantsTable.getItems().add(etudiant);
                             }
                         }
 
-                        // Close the database connection
                         connection.close();
                     }
                 } catch (ClassNotFoundException | SQLException e) {
                     e.printStackTrace();
-                    // Handle exceptions, show error messages, etc.
                 }
             }
 }

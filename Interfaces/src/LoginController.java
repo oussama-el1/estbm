@@ -93,7 +93,7 @@ public class LoginController {
 
             Stage dashboardStage = new Stage();
             dashboardStage.setTitle("Dashboard");
-            Scene scene = new Scene(root, 800, 600);
+            Scene scene = new Scene(root, 870, 500);
             dashboardStage.getIcons().add(new javafx.scene.image.Image("resources/estbm.png"));
             dashboardStage.setScene(scene);
             dashboardStage.show();

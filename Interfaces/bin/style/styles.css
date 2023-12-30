@@ -1,4 +1,5 @@
 /* styles.css */
+
 .root {
     -fx-background-size: cover;
     -fx-background-image: url('../resources/bgimage.jpg');
@@ -14,13 +15,14 @@ VBox {
     -fx-max-height: 350; /* Set max height */
     -fx-background-radius: 10;
     -fx-border-width: 0; /* Set to 0 to remove default border */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 0); /* Add a subtle box shadow */
 }
 
 Text {
     -fx-font-family: 'Arial';
-    -fx-font-size: 10pt;
+    -fx-font-size: 12pt; /* Increase font size for better readability */
     -fx-font-weight: bold;
-    -fx-fill: black;
+    -fx-fill: #333333; /* Dark Gray text color */
 }
 
 ImageView {
@@ -31,9 +33,15 @@ ImageView {
 TextField, PasswordField, Button {
     -fx-font-size: 14; /* Set font size for text fields and button */
     -fx-max-width: 250; /* Set max width for text fields and button */
+    -fx-background-radius: 5; /* Add border-radius for a modern look */
 }
 
 Button {
-    -fx-background-color: #3498db; /* Set button background color */
-    -fx-text-fill: #ffffff; /* Set button text color */
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 0); /* Add a subtle box shadow */
+}
+
+Button:hover {
+    -fx-background-color: #45a049; /* Darker Green on hover */
 }

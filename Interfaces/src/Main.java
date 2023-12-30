@@ -34,7 +34,7 @@ public class Main extends Application {
         loginController.setConnection(connection);
 
         primaryStage.setTitle("ESTBM - Login Page");
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(root, 800, 500);
         scene.getStylesheets().add(getClass().getResource("style/styles.css").toExternalForm());
         primaryStage.getIcons().add(new javafx.scene.image.Image("resources/estbm.png"));
         primaryStage.setScene(scene);
