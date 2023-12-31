@@ -48,7 +48,7 @@ public class EnseignantsFormController {
     private void handleAdd() {
         // Load the AddForm.fxml dynamically
         try {
-            StackPane bar = FXMLLoader.load(getClass().getResource("view/Etudiants.fxml"));
+            StackPane bar = FXMLLoader.load(getClass().getResource("view/EnseignantsForm.fxml"));
             VBox addForm = FXMLLoader.load(getClass().getResource("view/AddForm.fxml"));
             // Add the form to the main content pane
             mainContentPane.getChildren().addAll(bar, addForm);
@@ -107,7 +107,7 @@ public class EnseignantsFormController {
     private void handleUpdate() {
         // Handle update operation
         try {
-            StackPane bar = FXMLLoader.load(getClass().getResource("view/Etudiants.fxml"));
+            StackPane bar = FXMLLoader.load(getClass().getResource("view/EnseignantsForm.fxml"));
             VBox addForm = FXMLLoader.load(getClass().getResource("view/updateForm.fxml"));
             // Add the form to the main content pane
             mainContentPane.getChildren().addAll(bar, addForm);
@@ -172,7 +172,7 @@ public class EnseignantsFormController {
     private void handleRemove() {
         // Handle remove operation
         try {
-            StackPane bar = FXMLLoader.load(getClass().getResource("view/Etudiants.fxml"));
+            StackPane bar = FXMLLoader.load(getClass().getResource("view/EnseignantsForm.fxml"));
             VBox addForm = FXMLLoader.load(getClass().getResource("view/remove.fxml"));
             // Add the form to the main content pane
             mainContentPane.getChildren().addAll(bar, addForm);

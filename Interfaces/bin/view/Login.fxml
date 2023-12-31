@@ -16,7 +16,7 @@
             <Text text="Ecole Supérieure de Technologie Beni Mellal" />
             <ImageView fitWidth="200" fitHeight="100" preserveRatio="true">
                 <image>
-                    <Image url="resources\estbm.png"/>
+                    <Image url="resources/estbm.png"/>
                 </image>
             </ImageView>
             <TextField fx:id="emailField" promptText="Email" />

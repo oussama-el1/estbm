@@ -96,7 +96,7 @@ public class NotesController {
     private void handleUpdate() {
         try {
             StackPane bar = FXMLLoader.load(getClass().getResource("view/NotesForm.fxml"));
-            VBox addForm = FXMLLoader.load(getClass().getResource("view/updateNoteForm.fxml"));
+            VBox addForm = FXMLLoader.load(getClass().getResource("view/UpdateNoteForm.fxml"));
             // Add the form to the main content pane
             mainContentPane.getChildren().addAll(bar, addForm);
         } catch (IOException e) {

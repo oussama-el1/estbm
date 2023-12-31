@@ -23,7 +23,7 @@ public class DashboardController {
         // Check if already initialized
         if (!isInitialized) {
             // Initialize the navigation bar
-            navListView.getItems().addAll("Enseignant", "Emplois de Temps", "Etudiants", "Filiere", "Cours", "Examens", "Notes", "List Etudients", "List Enseignant",
+            navListView.getItems().addAll("Enseignant", "Filiere", "Etudiants", "Cours", "Emplois de Temps", "Examens", "Notes", "List Enseignant", "List Etudients", 
                                             "List Filiere", "Emplois List", "Cours List", "List Examens", "Releve notes");
             navListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
             // Set default content
